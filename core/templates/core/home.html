@@ -1,0 +1,128 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}The Flex Media - Digital Marketing Agency{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h1 class="display-4 gold-text">Let's Grow with Flex</h1>
+                <p class="lead secondary-text mb-4">Elevate your brand's online presence with our tailored digital marketing solutions.</p>
+                <a href="{% url 'contact' %}" class="btn btn-gold px-4 py-2 mb-3">Get Started</a>
+            </div>
+            <div class="col-lg-6 text-center">
+                <!-- Placeholder for hero image -->
+                <!-- <div style="background: linear-gradient(45deg, var(--gold-gradient-start), var(--silver-gradient-end)); height: 350px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <h2 class="display-1 text-dark">TFM</h2>
+                </div> -->
+                <img src="{% static 'images/company_Name.jpg' %}" alt="The Flex Media Logo" class="img-fluid" style="background: linear-gradient(45deg, var(--gold-gradient-start), var(--silver-gradient-end)); height: 350px; border-radius: 10px; display: flex; align-items: center; justify-content: center;"">
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 silver-text">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card service-card h-100 p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-chart-line fa-3x gold-text"></i>
+                    </div>
+                    <h3 class="text-center">Digital Marketing</h3>
+                    <p class="secondary-text">Comprehensive digital strategies to boost your online presence and drive conversions.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card h-100 p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-hashtag fa-3x gold-text"></i>
+                    </div>
+                    <h3 class="text-center">Social Media</h3>
+                    <p class="secondary-text">Engaging social media campaigns to grow your audience and enhance brand loyalty.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card h-100 p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-search fa-3x gold-text"></i>
+                    </div>
+                    <h3 class="text-center">SEO</h3>
+                    <p class="secondary-text">Data-driven SEO strategies to improve your search rankings and organic traffic.</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="{% url 'services' %}" class="btn btn-gold px-4 py-2">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 silver-text">Why Choose The Flex Media?</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-medal fa-3x gold-text"></i>
+                    </div>
+                    <h4 class="text-center">Expertise</h4>
+                    <p class="secondary-text text-center">Industry experts with proven track records</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-chart-pie fa-3x gold-text"></i>
+                    </div>
+                    <h4 class="text-center">Results</h4>
+                    <p class="secondary-text text-center">Data-driven strategies for measurable outcomes</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-user-friends fa-3x gold-text"></i>
+                    </div>
+                    <h4 class="text-center">Support</h4>
+                    <p class="secondary-text text-center">Dedicated team providing continuous assistance</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 p-4">
+                    <div class="text-center mb-3">
+                        <i class="fas fa-lightbulb fa-3x gold-text"></i>
+                    </div>
+                    <h4 class="text-center">Innovation</h4>
+                    <p class="secondary-text text-center">Staying ahead with the latest industry trends</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="card p-5" style="background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url('images/company_Name.jpg') center/cover;">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="gold-text mb-4">Ready to Transform Your Online Presence?</h2>
+                    <p class="secondary-text mb-4">Contact us today for a free consultation and discover how The Flex Media can help your business grow.</p>
+                    <a href="{% url 'contact' %}" class="btn btn-gold px-4 py-2">Contact Us Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

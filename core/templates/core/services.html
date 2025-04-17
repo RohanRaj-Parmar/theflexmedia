@@ -1,0 +1,133 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Our Services - The Flex Media{% endblock %}
+
+{% block content %}
+<!-- Services Header -->
+<section class="py-5">
+    <div class="container">
+        <h1 class="text-center gold-text mb-5">Our Services</h1>
+        <p class="lead secondary-text text-center mb-5">We offer comprehensive digital marketing solutions designed to elevate your brand and drive growth.</p>
+    </div>
+</section>
+
+<!-- Services List -->
+<section class="py-5">
+    <div class="container">
+        <!-- Digital Marketing -->
+        <div class="row align-items-center mb-5 py-4">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div style="background: linear-gradient(45deg, var(--gold-gradient-start), var(--gold-gradient-end)); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-chart-line fa-5x text-dark"></i>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="silver-text mb-4">Digital Marketing</h2>
+                <p class="secondary-text">Our comprehensive digital marketing strategies are tailored to meet your specific business goals. We combine multiple channels and tactics to create a cohesive online presence that drives targeted traffic and conversions.</p>
+                <ul class="secondary-text">
+                    <li>Strategic campaign planning</li>
+                    <li>Multi-channel marketing approach</li>
+                    <li>Performance tracking and analytics</li>
+                    <li>Continuous optimization for maximum ROI</li>
+                </ul>
+                <a href="{% url 'contact' %}" class="btn btn-gold px-4 py-2 mt-3">Get Started</a>
+            </div>
+        </div>
+        
+        <!-- Social Media Marketing -->
+        <div class="row align-items-center mb-5 py-4 flex-lg-row-reverse">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div style="background: linear-gradient(45deg, var(--silver-gradient-start), var(--silver-gradient-end)); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-hashtag fa-5x text-dark"></i>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="silver-text mb-4">Social Media Marketing</h2>
+                <p class="secondary-text">Build meaningful connections with your audience through strategic social media marketing. We create engaging content and manage your social profiles to increase brand awareness and foster community engagement.</p>
+                <ul class="secondary-text">
+                    <li>Platform-specific content strategies</li>
+                    <li>Community management and engagement</li>
+                    <li>Paid social advertising campaigns</li>
+                    <li>Influencer partnership opportunities</li>
+                </ul>
+                <a href="{% url 'contact' %}" class="btn btn-gold px-4 py-2 mt-3">Get Started</a>
+            </div>
+        </div>
+        
+        <!-- SEO -->
+        <div class="row align-items-center mb-5 py-4">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div style="background: linear-gradient(45deg, var(--gold-gradient-start), var(--gold-gradient-end)); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-search fa-5x text-dark"></i>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="silver-text mb-4">SEO</h2>
+                <p class="secondary-text">Improve your visibility in search engine results with our data-driven SEO strategies. We optimize your website and content to attract more organic traffic and improve your rankings for relevant keywords.</p>
+                <ul class="secondary-text">
+                    <li>Comprehensive website audits</li>
+                    <li>On-page and off-page optimization</li>
+                    <li>Content strategy and creation</li>
+                    <li>Local SEO for businesses with physical locations</li>
+                </ul>
+                <a href="{% url 'contact' %}" class="btn btn-gold px-4 py-2 mt-3">Get Started</a>
+            </div>
+        </div>
+        
+        <!-- Google Ads -->
+        <div class="row align-items-center mb-5 py-4 flex-lg-row-reverse">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div style="background: linear-gradient(45deg, var(--silver-gradient-start), var(--silver-gradient-end)); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fab fa-google fa-5x text-dark"></i>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="silver-text mb-4">Google Ads</h2>
+                <p class="secondary-text">Drive targeted traffic and generate leads with expertly managed Google Ads campaigns. We create and optimize pay-per-click advertising to maximize your return on investment.</p>
+                <ul class="secondary-text">
+                    <li>Keyword research and selection</li>
+                    <li>Ad copywriting and creative design</li>
+                    <li>Bid management and budget optimization</li>
+                    <li>Conversion tracking and performance reporting</li>
+                </ul>
+                <a href="{% url 'contact' %}" class="btn btn-gold px-4 py-2 mt-3">Get Started</a>
+            </div>
+        </div>
+        
+        <!-- Website Designing -->
+        <div class="row align-items-center mb-5 py-4">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div style="background: linear-gradient(45deg, var(--gold-gradient-start), var(--gold-gradient-end)); height: 300px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-laptop-code fa-5x text-dark"></i>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h2 class="silver-text mb-4">Website Designing</h2>
+                <p class="secondary-text">Create a stunning online presence with our custom website design services. We develop responsive, user-friendly websites that reflect your brand identity and drive conversions.</p>
+                <ul class="secondary-text">
+                    <li>Custom design and development</li>
+                    <li>Mobile-responsive layouts</li>
+                    <li>User experience optimization</li>
+                    <li>SEO-friendly structure and content</li>
+                </ul>
+                <a href="{% url 'contact' %}" class="btn btn-gold px-4 py-2 mt-3">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="card p-5" style="background: rgba(0,0,0,0.7);">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="gold-text mb-4">Need a Custom Solution?</h2>
+                    <p class="secondary-text mb-4">Contact us today to discuss your specific requirements and discover how The Flex Media can help your business thrive online.</p>
+                    <a href="{% url 'contact' %}" class="btn btn-gold px-4 py-2">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
