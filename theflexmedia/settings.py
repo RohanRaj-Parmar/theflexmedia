@@ -113,18 +113,25 @@ USE_TZ = True
 
 
 
+# STATIC_URL = '/static/'
+
+
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Add this if your static folder is in the project root
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # This tells Django to look for static files here
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'static'),  # This tells Django to look for static files here
+# ]
 # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # STATIC_URL = '/static/'
 # STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
